@@ -1,0 +1,68 @@
+/* card.css */
+
+/* Product Card */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    overflow: hidden;
+    border-radius: 8px; /* Add rounded corners for a softer look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Initial shadow for depth */
+}
+
+/* Hover Effect for Card */
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Slightly darker shadow on hover */
+}
+
+/* Image Styles */
+.product-image {
+    height: 250px; /* Fixed height to maintain uniformity */
+    width: 100%; /* Make the image take full width of the container */
+    object-fit: cover; /* Maintain aspect ratio and fill the space */
+    background-color: #f7f7f7; /* Fallback background color */
+}
+
+/* Product Name */
+.product-name {
+    font-size: 1.2rem; /* Slightly larger font size for visibility */
+    font-weight: 600;
+    margin-bottom: 0.5rem; /* Space below the product name */
+}
+
+/* Product Price */
+.product-price h6 {
+    font-size: 1.3rem; /* Increase size for emphasis */
+    color: #dc3545; /* Bootstrap's danger color for price */
+    margin-bottom: 0.5rem; /* Space below the price */
+}
+
+/* Product Rating */
+.product-rating {
+    font-size: 1rem;
+    color: #6c757d; /* Bootstrap's muted color */
+}
+
+/* Card Body */
+.card-body {
+    padding: 1.25rem; /* Maintain original padding */
+}
+
+/* Button Styles */
+.btn {
+    font-size: 0.875rem; /* Consistent button text size */
+}
+
+/* Button on Hover */
+.btn:hover {
+    background-color: #ffc107; /* Bootstrap's warning color */
+    color: #fff; /* Change text color on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-card {
+        margin-bottom: 1rem;
+    }
+}
